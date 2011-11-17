@@ -6,10 +6,9 @@
 
     // Must first authenticate using your account's API key
     var v = require('vanguard')
-    v.authenticate(:apikey => 'derp')
+    v.authenticate({apikey : 'derp'})
 
 	// Get all databases
-    v.database.all({}, function( databases ){
+    v.database.all({}, function( databases ) {
       // do something asynchronous with databases array
-    })
-
+    });
