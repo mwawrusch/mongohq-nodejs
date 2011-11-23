@@ -2,7 +2,7 @@
   "author": "Eric Redmond <eric@mongohq.com>",
   "name": "vanguard",
   "description": "MongoHQ Javascript Client",
-  "version": "0.1",
+  "version": "0.1.0",
   "homepage": "http://mongohq.com/",
   "preferGlobal": "true",
   "repository": {
@@ -18,9 +18,9 @@
   },
   "directories": {
     "test": "./test",
-    "lib":  "./lib",
+    "lib":  "./lib"
   },
   "scripts": {
     "test": "vows --spec"
-  },
+  }
 }
