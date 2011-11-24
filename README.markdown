@@ -4,6 +4,12 @@
 
 ## Using
 
+You can get the most recent stable version through NPM
+
+    npm install vanguard
+
+To use, just require it, and do stuff.
+
     // Must first authenticate using your account's API key
     var v = require('vanguard')
     v.authenticate({apikey : 'derp'})
