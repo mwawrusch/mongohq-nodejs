@@ -11,8 +11,7 @@ You can get the most recent stable version through NPM
 To use, just require it, and do stuff.
 
     // Must first authenticate using your account's API key
-    var mhq = require('mongohq')
-    mhq.authenticate({apikey : 'derp'})
+    var mhq = require('mongohq').authenticate({apikey : 'derp'});
 
 	// Get all databases
     mhq.database.all({}, function( databases ) {
