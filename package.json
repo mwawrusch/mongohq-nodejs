@@ -1,13 +1,13 @@
 {
   "author": "Eric Redmond <eric@mongohq.com>",
-  "name": "vanguard",
+  "name": "mongohq",
   "description": "MongoHQ Javascript Client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://mongohq.com/",
   "preferGlobal": "true",
   "repository": {
     "type": "git",
-    "url": "http://github.com/mongohq/vanguard.git"
+    "url": "http://github.com/mongohq/mongohq-nodejs.git"
   },
   "keywords": ["mongohq", "mongodb", "http", "client"],
   "engines": {

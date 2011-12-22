@@ -1,8 +1,8 @@
 var vows      = require('vows'),
     assert    = require('assert'),
-    vanguard  = require('../lib/vanguard'),
-    base      = require('../lib/vanguard/base'),
-    connection = require('../lib/vanguard/connection');
+    mongohq  = require('../lib/mongohq'),
+    base      = require('../lib/mongohq/base'),
+    connection = require('../lib/mongohq/connection');
 
 vows.describe('Connections').addBatch({
   'when not authenticated': {
@@ -17,10 +17,10 @@ vows.describe('Connections').addBatch({
 }).addBatch({
   'when authenticating': {
     topic: function () {
-      return vanguard.authenticate({'apikey' : 'derp'});
+      return mongohq.authenticate({'apikey' : 'derp'});
     },
 
-    'return the vanguard plugin': {
+    'return the mongohq plugin': {
       'is not null': function (topic) {
         assert.isNotNull(topic);
       },
@@ -33,8 +33,8 @@ vows.describe('Connections').addBatch({
 
   'when making a call': {
     topic: function () {
-      vanguard.authenticate({'apikey' : 'derp'});
-      vanguard.conn = {'request' : function(){console.log('called')}}
+      mongohq.authenticate({'apikey' : 'derp'});
+      mongohq.conn = {'request' : function(){console.log('called')}}
       return base.connection();
     },
 
@@ -53,8 +53,8 @@ vows.describe('Connections').addBatch({
 
   'when making a callback': {
     topic: function () {
-      vanguard.authenticate({'apikey' : 'derp'});
-      vanguard.conn = {'request' : function(opts, callback){ assert(false); }}
+      mongohq.authenticate({'apikey' : 'derp'});
+      mongohq.conn = {'request' : function(opts, callback){ assert(false); }}
       return base.connection();
     },
 

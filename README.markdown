@@ -1,4 +1,4 @@
-# Vanguard-1
+# MongoHQ API NodeJS
 
 ![Vanguard](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Vanguard_1.jpg/250px-Vanguard_1.jpg)
 
@@ -6,15 +6,15 @@
 
 You can get the most recent stable version through NPM
 
-    npm install vanguard
+    npm install mongohq
 
 To use, just require it, and do stuff.
 
     // Must first authenticate using your account's API key
-    var v = require('vanguard')
-    v.authenticate({apikey : 'derp'})
+    var mhq = require('mongohq')
+    mhq.authenticate({apikey : 'derp'})
 
 	// Get all databases
-    v.database.all({}, function( databases ) {
+    mhq.database.all({}, function( databases ) {
       // do something asynchronous with databases array
     });

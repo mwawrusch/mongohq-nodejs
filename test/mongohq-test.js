@@ -1,11 +1,11 @@
 var vows      = require('vows'),
     assert    = require('assert'),
-    vanguard  = require('../lib/vanguard');
+    mongohq  = require('../lib/mongohq');
 
-vows.describe('Vanguard').addBatch({
+vows.describe('MongoHQ').addBatch({
   'exports model can access': {
     topic: function () {
-      return vanguard.authenticate({'apikey' : 'derp'});
+      return mongohq.authenticate({'apikey' : 'derp'});
     },
     
     'databases': function (topic) {
