@@ -4,7 +4,6 @@
   "description": "MongoHQ API Client",
   "version": "0.3.0",
   "homepage": "http://mongohq.com/",
-  "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "http://github.com/mongohq/mongohq-nodejs.git"
