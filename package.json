@@ -1,15 +1,15 @@
 {
   "author": "Eric Redmond <eric@mongohq.com>",
   "name": "mongohq",
-  "description": "MongoHQ Javascript Client",
-  "version": "0.2.0",
+  "description": "MongoHQ API Client",
+  "version": "0.3.0",
   "homepage": "http://mongohq.com/",
   "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "http://github.com/mongohq/mongohq-nodejs.git"
   },
-  "keywords": ["mongohq", "mongodb", "http", "client"],
+  "keywords": ["mongohq", "mongodb", "http", "client", "api"],
   "engines": {
     "node": ">0.4.3"
   },
