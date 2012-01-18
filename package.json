@@ -2,8 +2,9 @@
   "author": "Eric Redmond <eric@mongohq.com>",
   "name": "mongohq",
   "description": "MongoHQ API Client",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "http://mongohq.com/",
+  "main": "./lib/mongohq.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/mongohq/mongohq-nodejs.git"
