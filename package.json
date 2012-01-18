@@ -21,6 +21,6 @@
     "lib":  "./lib"
   },
   "scripts": {
-    "test": "vows --spec"
+    "test": "node_modules/.bin/vows --spec"
   }
 }
